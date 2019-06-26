@@ -3589,7 +3589,7 @@ input, select, textarea {
 					}
 
 					.wrapper > .inner > .main.accent1 header p {
-						color: rgba(255, 255, 255, 0.5);
+						color: rgba(0, 0, 0, 0.5);
 					}
 
 					.wrapper > .inner > .main.accent1 table tbody tr {
@@ -3601,7 +3601,7 @@ input, select, textarea {
 						}
 
 					.wrapper > .inner > .main.accent1 table th {
-						color: #ffffff;
+						color: #000000;
 					}
 
 					.wrapper > .inner > .main.accent1 table thead {
@@ -3618,7 +3618,7 @@ input, select, textarea {
 
 				.wrapper > .inner > .main.accent2 {
 					background-color: #ffffff;
-					color: rgba(255, 255, 255, 0.75);
+					color: rgba(0, 0, 0, 0.75);
 				}
 
 					.wrapper > .inner > .main.accent2 input, .wrapper > .inner > .main.accent2 select, .wrapper > .inner > .main.accent2 textarea {
@@ -4433,7 +4433,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		color: #ffffff;
+		color: #000000;
 		cursor: default;
 		line-height: 1.5;
 		margin: 0 0 1.4em 0;
@@ -4464,7 +4464,7 @@ input, select, textarea {
 
 			#header > .logo span {
 				border-left: solid 1px rgba(255, 255, 255, 0.25);
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(0, 0, 0, 0.5);
 				display: inline-block;
 				font-size: 0.8em;
 				margin-left: 0.325em;
@@ -4626,19 +4626,19 @@ input, select, textarea {
 	}
 
 		#menu input, #menu select, #menu textarea {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#menu a {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#menu strong, #menu b {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#menu h1, #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#menu blockquote {
@@ -5620,12 +5620,8 @@ body.is-preload #content > .slider {
 	#page-wrapper {
 		overflow-x: hidden;
 		width: 100%;
+    background-color: #ffffff;
 	}
-
-		#page-wrapper > :first-child,
-		#page-wrapper > :last-child {
-			background-color: #4a74c9;
-		}
 
 		#page-wrapper > * {
 			padding: 0 4em;
