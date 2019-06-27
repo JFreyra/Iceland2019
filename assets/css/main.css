@@ -204,7 +204,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		color: #213fa3;
+		color: rgba(67, 75, 86);
     font-size: 19px;
     font-weight: 350;
 	}
@@ -4809,9 +4809,10 @@ input, select, textarea {
 		visibility: visible;
 	}
 
-/* Banner */
+/* Banner
+   Banner class, bad structure, gets job done */
 
-	#banner {
+	.banner {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4823,7 +4824,7 @@ input, select, textarea {
 		background-color: #363847;
 	}
 
-		#banner > .items {
+		.banner > .items {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -4843,364 +4844,365 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			#banner > .items section {
-				padding: 5em 6em 3em 6em ;
+			.banner > .items section {
+				padding: 5em 6em 3em 5em ;
 				-moz-transition: opacity 0.5s ease-in-out, -moz-transform 0.5s ease-in-out;
 				-webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 				-ms-transition: opacity 0.5s ease-in-out, -ms-transform 0.5s ease-in-out;
 				transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 				text-align: center;
+        justify-content: center;
 			}
 
-				#banner > .items section h1 {
+				.banner > .items section h1 {
 					font-size: 1.75em;
 				}
 
-				#banner > .items section.accent1 {
+				.banner > .items section.accent1 {
 					background-color: #575b72;
 					color: rgba(255, 255, 255, 0.75);
 				}
 
-					#banner > .items section.accent1 input, #banner > .items section.accent1 select, #banner > .items section.accent1 textarea {
+					.banner > .items section.accent1 input, .banner > .items section.accent1 select, .banner > .items section.accent1 textarea {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent1 a {
+					.banner > .items section.accent1 a {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent1 strong, #banner > .items section.accent1 b {
+					.banner > .items section.accent1 strong, .banner > .items section.accent1 b {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent1 h1, #banner > .items section.accent1 h2, #banner > .items section.accent1 h3, #banner > .items section.accent1 h4, #banner > .items section.accent1 h5, #banner > .items section.accent1 h6 {
+					.banner > .items section.accent1 h1, .banner > .items section.accent1 h2, .banner > .items section.accent1 h3, .banner > .items section.accent1 h4, .banner > .items section.accent1 h5, .banner > .items section.accent1 h6 {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent1 blockquote {
+					.banner > .items section.accent1 blockquote {
 						border-left-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent1 code {
+					.banner > .items section.accent1 code {
 						background: rgba(255, 255, 255, 0.05);
 						border-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent1 hr {
+					.banner > .items section.accent1 hr {
 						border-bottom-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent1 input[type="submit"],
-					#banner > .items section.accent1 input[type="reset"],
-					#banner > .items section.accent1 input[type="button"],
-					#banner > .items section.accent1 button,
-					#banner > .items section.accent1 .button {
+					.banner > .items section.accent1 input[type="submit"],
+					.banner > .items section.accent1 input[type="reset"],
+					.banner > .items section.accent1 input[type="button"],
+					.banner > .items section.accent1 button,
+					.banner > .items section.accent1 .button {
 						background-color: transparent;
 						box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 						color: #ffffff !important;
 					}
 
-						#banner > .items section.accent1 input[type="submit"]:hover,
-						#banner > .items section.accent1 input[type="reset"]:hover,
-						#banner > .items section.accent1 input[type="button"]:hover,
-						#banner > .items section.accent1 button:hover,
-						#banner > .items section.accent1 .button:hover {
+						.banner > .items section.accent1 input[type="submit"]:hover,
+						.banner > .items section.accent1 input[type="reset"]:hover,
+						.banner > .items section.accent1 input[type="button"]:hover,
+						.banner > .items section.accent1 button:hover,
+						.banner > .items section.accent1 .button:hover {
 							background-color: rgba(255, 255, 255, 0.05);
 						}
 
-						#banner > .items section.accent1 input[type="submit"]:active,
-						#banner > .items section.accent1 input[type="reset"]:active,
-						#banner > .items section.accent1 input[type="button"]:active,
-						#banner > .items section.accent1 button:active,
-						#banner > .items section.accent1 .button:active {
+						.banner > .items section.accent1 input[type="submit"]:active,
+						.banner > .items section.accent1 input[type="reset"]:active,
+						.banner > .items section.accent1 input[type="button"]:active,
+						.banner > .items section.accent1 button:active,
+						.banner > .items section.accent1 .button:active {
 							background-color: rgba(255, 255, 255, 0.1);
 						}
 
-						#banner > .items section.accent1 input[type="submit"].primary,
-						#banner > .items section.accent1 input[type="reset"].primary,
-						#banner > .items section.accent1 input[type="button"].primary,
-						#banner > .items section.accent1 button.primary,
-						#banner > .items section.accent1 .button.primary {
+						.banner > .items section.accent1 input[type="submit"].primary,
+						.banner > .items section.accent1 input[type="reset"].primary,
+						.banner > .items section.accent1 input[type="button"].primary,
+						.banner > .items section.accent1 button.primary,
+						.banner > .items section.accent1 .button.primary {
 							box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
 							background-color: #5f6484;
 							color: #ffffff !important;
 						}
 
-							#banner > .items section.accent1 input[type="submit"].primary:hover,
-							#banner > .items section.accent1 input[type="reset"].primary:hover,
-							#banner > .items section.accent1 input[type="button"].primary:hover,
-							#banner > .items section.accent1 button.primary:hover,
-							#banner > .items section.accent1 .button.primary:hover {
+							.banner > .items section.accent1 input[type="submit"].primary:hover,
+							.banner > .items section.accent1 input[type="reset"].primary:hover,
+							.banner > .items section.accent1 input[type="button"].primary:hover,
+							.banner > .items section.accent1 button.primary:hover,
+							.banner > .items section.accent1 .button.primary:hover {
 								background-color: #696f93;
 							}
 
-							#banner > .items section.accent1 input[type="submit"].primary:active,
-							#banner > .items section.accent1 input[type="reset"].primary:active,
-							#banner > .items section.accent1 input[type="button"].primary:active,
-							#banner > .items section.accent1 button.primary:active,
-							#banner > .items section.accent1 .button.primary:active {
+							.banner > .items section.accent1 input[type="submit"].primary:active,
+							.banner > .items section.accent1 input[type="reset"].primary:active,
+							.banner > .items section.accent1 input[type="button"].primary:active,
+							.banner > .items section.accent1 button.primary:active,
+							.banner > .items section.accent1 .button.primary:active {
 								background-color: #757ca0;
 							}
 
-				#banner > .items section.accent2 {
+				.banner > .items section.accent2 {
 					background-color: #ffffff;
 					color: #647db0;
 				}
 
-					#banner > .items section.accent2 input, #banner > .items section.accent2 select, #banner > .items section.accent2 textarea {
+					.banner > .items section.accent2 input, .banner > .items section.accent2 select, .banner > .items section.accent2 textarea {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent2 a {
+					.banner > .items section.accent2 a {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent2 strong, #banner > .items section.accent2 b {
+					.banner > .items section.accent2 strong, .banner > .items section.accent2 b {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent2 h1, #banner > .items section.accent2 h2, #banner > .items section.accent2 h3, #banner > .items section.accent2 h4, #banner > .items section.accent2 h5, #banner > .items section.accent2 h6 {
+					.banner > .items section.accent2 h1, .banner > .items section.accent2 h2, .banner > .items section.accent2 h3, .banner > .items section.accent2 h4, .banner > .items section.accent2 h5, .banner > .items section.accent2 h6 {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent2 blockquote {
+					.banner > .items section.accent2 blockquote {
 						border-left-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent2 code {
+					.banner > .items section.accent2 code {
 						background: rgba(255, 255, 255, 0.05);
 						border-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent2 hr {
+					.banner > .items section.accent2 hr {
 						border-bottom-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent2 input[type="submit"],
-					#banner > .items section.accent2 input[type="reset"],
-					#banner > .items section.accent2 input[type="button"],
-					#banner > .items section.accent2 button,
-					#banner > .items section.accent2 .button {
+					.banner > .items section.accent2 input[type="submit"],
+					.banner > .items section.accent2 input[type="reset"],
+					.banner > .items section.accent2 input[type="button"],
+					.banner > .items section.accent2 button,
+					.banner > .items section.accent2 .button {
 						background-color: transparent;
 						box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 						color: #ffffff !important;
 					}
 
-						#banner > .items section.accent2 input[type="submit"]:hover,
-						#banner > .items section.accent2 input[type="reset"]:hover,
-						#banner > .items section.accent2 input[type="button"]:hover,
-						#banner > .items section.accent2 button:hover,
-						#banner > .items section.accent2 .button:hover {
+						.banner > .items section.accent2 input[type="submit"]:hover,
+						.banner > .items section.accent2 input[type="reset"]:hover,
+						.banner > .items section.accent2 input[type="button"]:hover,
+						.banner > .items section.accent2 button:hover,
+						.banner > .items section.accent2 .button:hover {
 							background-color: rgba(255, 255, 255, 0.05);
 						}
 
-						#banner > .items section.accent2 input[type="submit"]:active,
-						#banner > .items section.accent2 input[type="reset"]:active,
-						#banner > .items section.accent2 input[type="button"]:active,
-						#banner > .items section.accent2 button:active,
-						#banner > .items section.accent2 .button:active {
+						.banner > .items section.accent2 input[type="submit"]:active,
+						.banner > .items section.accent2 input[type="reset"]:active,
+						.banner > .items section.accent2 input[type="button"]:active,
+						.banner > .items section.accent2 button:active,
+						.banner > .items section.accent2 .button:active {
 							background-color: rgba(255, 255, 255, 0.1);
 						}
 
-						#banner > .items section.accent2 input[type="submit"].primary,
-						#banner > .items section.accent2 input[type="reset"].primary,
-						#banner > .items section.accent2 input[type="button"].primary,
-						#banner > .items section.accent2 button.primary,
-						#banner > .items section.accent2 .button.primary {
+						.banner > .items section.accent2 input[type="submit"].primary,
+						.banner > .items section.accent2 input[type="reset"].primary,
+						.banner > .items section.accent2 input[type="button"].primary,
+						.banner > .items section.accent2 button.primary,
+						.banner > .items section.accent2 .button.primary {
 							box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
 							background-color: #375796;
 							color: #ffffff !important;
 						}
 
-							#banner > .items section.accent2 input[type="submit"].primary:hover,
-							#banner > .items section.accent2 input[type="reset"].primary:hover,
-							#banner > .items section.accent2 input[type="button"].primary:hover,
-							#banner > .items section.accent2 button.primary:hover,
-							#banner > .items section.accent2 .button.primary:hover {
+							.banner > .items section.accent2 input[type="submit"].primary:hover,
+							.banner > .items section.accent2 input[type="reset"].primary:hover,
+							.banner > .items section.accent2 input[type="button"].primary:hover,
+							.banner > .items section.accent2 button.primary:hover,
+							.banner > .items section.accent2 .button.primary:hover {
 								background-color: #4a74c7;
 							}
 
-							#banner > .items section.accent2 input[type="submit"].primary:active,
-							#banner > .items section.accent2 input[type="reset"].primary:active,
-							#banner > .items section.accent2 input[type="button"].primary:active,
-							#banner > .items section.accent2 button.primary:active,
-							#banner > .items section.accent2 .button.primary:active {
+							.banner > .items section.accent2 input[type="submit"].primary:active,
+							.banner > .items section.accent2 input[type="reset"].primary:active,
+							.banner > .items section.accent2 input[type="button"].primary:active,
+							.banner > .items section.accent2 button.primary:active,
+							.banner > .items section.accent2 .button.primary:active {
 								background-color: #7cc8cd;
 							}
 
-				#banner > .items section.accent3 {
+				.banner > .items section.accent3 {
 					background-color: #ffffff;
 					color: #647db0;
 				}
 
-					#banner > .items section.accent3 input, #banner > .items section.accent3 select, #banner > .items section.accent3 textarea {
+					.banner > .items section.accent3 input, .banner > .items section.accent3 select, .banner > .items section.accent3 textarea {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent3 a {
+					.banner > .items section.accent3 a {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent3 strong, #banner > .items section.accent3 b {
+					.banner > .items section.accent3 strong, .banner > .items section.accent3 b {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent3 h1, #banner > .items section.accent3 h2, #banner > .items section.accent3 h3, #banner > .items section.accent3 h4, #banner > .items section.accent3 h5, #banner > .items section.accent3 h6 {
+					.banner > .items section.accent3 h1, .banner > .items section.accent3 h2, .banner > .items section.accent3 h3, .banner > .items section.accent3 h4, .banner > .items section.accent3 h5, .banner > .items section.accent3 h6 {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent3 blockquote {
+					.banner > .items section.accent3 blockquote {
 						border-left-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent3 code {
+					.banner > .items section.accent3 code {
 						background: rgba(255, 255, 255, 0.05);
 						border-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent3 hr {
+					.banner > .items section.accent3 hr {
 						border-bottom-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent3 input[type="submit"],
-					#banner > .items section.accent3 input[type="reset"],
-					#banner > .items section.accent3 input[type="button"],
-					#banner > .items section.accent3 button,
-					#banner > .items section.accent3 .button {
+					.banner > .items section.accent3 input[type="submit"],
+					.banner > .items section.accent3 input[type="reset"],
+					.banner > .items section.accent3 input[type="button"],
+					.banner > .items section.accent3 button,
+					.banner > .items section.accent3 .button {
 						background-color: transparent;
 						box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 						color: #ffffff !important;
 					}
 
-						#banner > .items section.accent3 input[type="submit"]:hover,
-						#banner > .items section.accent3 input[type="reset"]:hover,
-						#banner > .items section.accent3 input[type="button"]:hover,
-						#banner > .items section.accent3 button:hover,
-						#banner > .items section.accent3 .button:hover {
+						.banner > .items section.accent3 input[type="submit"]:hover,
+						.banner > .items section.accent3 input[type="reset"]:hover,
+						.banner > .items section.accent3 input[type="button"]:hover,
+						.banner > .items section.accent3 button:hover,
+						.banner > .items section.accent3 .button:hover {
 							background-color: rgba(255, 255, 255, 0.05);
 						}
 
-						#banner > .items section.accent3 input[type="submit"]:active,
-						#banner > .items section.accent3 input[type="reset"]:active,
-						#banner > .items section.accent3 input[type="button"]:active,
-						#banner > .items section.accent3 button:active,
-						#banner > .items section.accent3 .button:active {
+						.banner > .items section.accent3 input[type="submit"]:active,
+						.banner > .items section.accent3 input[type="reset"]:active,
+						.banner > .items section.accent3 input[type="button"]:active,
+						.banner > .items section.accent3 button:active,
+						.banner > .items section.accent3 .button:active {
 							background-color: rgba(255, 255, 255, 0.1);
 						}
 
-						#banner > .items section.accent3 input[type="submit"].primary,
-						#banner > .items section.accent3 input[type="reset"].primary,
-						#banner > .items section.accent3 input[type="button"].primary,
-						#banner > .items section.accent3 button.primary,
-						#banner > .items section.accent3 .button.primary {
+						.banner > .items section.accent3 input[type="submit"].primary,
+						.banner > .items section.accent3 input[type="reset"].primary,
+						.banner > .items section.accent3 input[type="button"].primary,
+						.banner > .items section.accent3 button.primary,
+						.banner > .items section.accent3 .button.primary {
 							box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
 							background-color: #375796;
 							color: #ffffff !important;
 						}
 
-							#banner > .items section.accent3 input[type="submit"].primary:hover,
-							#banner > .items section.accent3 input[type="reset"].primary:hover,
-							#banner > .items section.accent3 input[type="button"].primary:hover,
-							#banner > .items section.accent3 button.primary:hover,
-							#banner > .items section.accent3 .button.primary:hover {
+							.banner > .items section.accent3 input[type="submit"].primary:hover,
+							.banner > .items section.accent3 input[type="reset"].primary:hover,
+							.banner > .items section.accent3 input[type="button"].primary:hover,
+							.banner > .items section.accent3 button.primary:hover,
+							.banner > .items section.accent3 .button.primary:hover {
 								background-color: #4a74c7;
 							}
 
-							#banner > .items section.accent3 input[type="submit"].primary:active,
-							#banner > .items section.accent3 input[type="reset"].primary:active,
-							#banner > .items section.accent3 input[type="button"].primary:active,
-							#banner > .items section.accent3 button.primary:active,
-							#banner > .items section.accent3 .button.primary:active {
+							.banner > .items section.accent3 input[type="submit"].primary:active,
+							.banner > .items section.accent3 input[type="reset"].primary:active,
+							.banner > .items section.accent3 input[type="button"].primary:active,
+							.banner > .items section.accent3 button.primary:active,
+							.banner > .items section.accent3 .button.primary:active {
 								background-color: #9ddfcd;
 							}
 
-				#banner > .items section.accent4 {
+				.banner > .items section.accent4 {
 					background-color: #fed586;
 					color: rgba(255, 255, 255, 0.75);
 				}
 
-					#banner > .items section.accent4 input, #banner > .items section.accent4 select, #banner > .items section.accent4 textarea {
+					.banner > .items section.accent4 input, .banner > .items section.accent4 select, .banner > .items section.accent4 textarea {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent4 a {
+					.banner > .items section.accent4 a {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent4 strong, #banner > .items section.accent4 b {
+					.banner > .items section.accent4 strong, .banner > .items section.accent4 b {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent4 h1, #banner > .items section.accent4 h2, #banner > .items section.accent4 h3, #banner > .items section.accent4 h4, #banner > .items section.accent4 h5, #banner > .items section.accent4 h6 {
+					.banner > .items section.accent4 h1, .banner > .items section.accent4 h2, .banner > .items section.accent4 h3, .banner > .items section.accent4 h4, .banner > .items section.accent4 h5, .banner > .items section.accent4 h6 {
 						color: #ffffff;
 					}
 
-					#banner > .items section.accent4 blockquote {
+					.banner > .items section.accent4 blockquote {
 						border-left-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent4 code {
+					.banner > .items section.accent4 code {
 						background: rgba(255, 255, 255, 0.05);
 						border-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent4 hr {
+					.banner > .items section.accent4 hr {
 						border-bottom-color: rgba(255, 255, 255, 0.25);
 					}
 
-					#banner > .items section.accent4 input[type="submit"],
-					#banner > .items section.accent4 input[type="reset"],
-					#banner > .items section.accent4 input[type="button"],
-					#banner > .items section.accent4 button,
-					#banner > .items section.accent4 .button {
+					.banner > .items section.accent4 input[type="submit"],
+					.banner > .items section.accent4 input[type="reset"],
+					.banner > .items section.accent4 input[type="button"],
+					.banner > .items section.accent4 button,
+					.banner > .items section.accent4 .button {
 						background-color: transparent;
 						box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 						color: #ffffff !important;
 					}
 
-						#banner > .items section.accent4 input[type="submit"]:hover,
-						#banner > .items section.accent4 input[type="reset"]:hover,
-						#banner > .items section.accent4 input[type="button"]:hover,
-						#banner > .items section.accent4 button:hover,
-						#banner > .items section.accent4 .button:hover {
+						.banner > .items section.accent4 input[type="submit"]:hover,
+						.banner > .items section.accent4 input[type="reset"]:hover,
+						.banner > .items section.accent4 input[type="button"]:hover,
+						.banner > .items section.accent4 button:hover,
+						.banner > .items section.accent4 .button:hover {
 							background-color: rgba(255, 255, 255, 0.05);
 						}
 
-						#banner > .items section.accent4 input[type="submit"]:active,
-						#banner > .items section.accent4 input[type="reset"]:active,
-						#banner > .items section.accent4 input[type="button"]:active,
-						#banner > .items section.accent4 button:active,
-						#banner > .items section.accent4 .button:active {
+						.banner > .items section.accent4 input[type="submit"]:active,
+						.banner > .items section.accent4 input[type="reset"]:active,
+						.banner > .items section.accent4 input[type="button"]:active,
+						.banner > .items section.accent4 button:active,
+						.banner > .items section.accent4 .button:active {
 							background-color: rgba(255, 255, 255, 0.1);
 						}
 
-						#banner > .items section.accent4 input[type="submit"].primary,
-						#banner > .items section.accent4 input[type="reset"].primary,
-						#banner > .items section.accent4 input[type="button"].primary,
-						#banner > .items section.accent4 button.primary,
-						#banner > .items section.accent4 .button.primary {
+						.banner > .items section.accent4 input[type="submit"].primary,
+						.banner > .items section.accent4 input[type="reset"].primary,
+						.banner > .items section.accent4 input[type="button"].primary,
+						.banner > .items section.accent4 button.primary,
+						.banner > .items section.accent4 .button.primary {
 							box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
 							background-color: #ffde9f;
 							color: #ffffff !important;
 						}
 
-							#banner > .items section.accent4 input[type="submit"].primary:hover,
-							#banner > .items section.accent4 input[type="reset"].primary:hover,
-							#banner > .items section.accent4 input[type="button"].primary:hover,
-							#banner > .items section.accent4 button.primary:hover,
-							#banner > .items section.accent4 .button.primary:hover {
+							.banner > .items section.accent4 input[type="submit"].primary:hover,
+							.banner > .items section.accent4 input[type="reset"].primary:hover,
+							.banner > .items section.accent4 input[type="button"].primary:hover,
+							.banner > .items section.accent4 button.primary:hover,
+							.banner > .items section.accent4 .button.primary:hover {
 								background-color: #ffe7b8;
 							}
 
-							#banner > .items section.accent4 input[type="submit"].primary:active,
-							#banner > .items section.accent4 input[type="reset"].primary:active,
-							#banner > .items section.accent4 input[type="button"].primary:active,
-							#banner > .items section.accent4 button.primary:active,
-							#banner > .items section.accent4 .button.primary:active {
+							.banner > .items section.accent4 input[type="submit"].primary:active,
+							.banner > .items section.accent4 input[type="reset"].primary:active,
+							.banner > .items section.accent4 input[type="button"].primary:active,
+							.banner > .items section.accent4 button.primary:active,
+							.banner > .items section.accent4 .button.primary:active {
 								background-color: #ffefd2;
 							}
 
-		#banner > .slider {
+		.banner > .slider {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
@@ -5218,7 +5220,7 @@ input, select, textarea {
 			position: relative;
 		}
 
-			#banner > .slider > article {
+			.banner > .slider > article {
 				-moz-transition: opacity 1.5s, visibility 1.5s;
 				-webkit-transition: opacity 1.5s, visibility 1.5s;
 				-ms-transition: opacity 1.5s, visibility 1.5s;
@@ -5234,16 +5236,16 @@ input, select, textarea {
 				z-index: 0;
 			}
 
-				#banner > .slider > article.visible {
+				.banner > .slider > article.visible {
 					opacity: 1;
 					visibility: visible;
 				}
 
-				#banner > .slider > article.top {
+				.banner > .slider > article.top {
 					z-index: 1;
 				}
 
-				#banner > .slider > article:before {
+				.banner > .slider > article:before {
 					content: '';
 					height: 100%;
 					left: 0;
@@ -5253,41 +5255,41 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				#banner > .slider > article img {
+				.banner > .slider > article img {
 					height: 100%;
 					width: 100%;
 				}
 
-		body.is-preload #banner > .slider {
+		body.is-preload .banner > .slider {
 			opacity: 0;
 		}
 
 		@media screen and (max-width: 1680px) {
 
-			#banner > .items section {
-				padding: 4.5em 5em 2.5em 5em ;
+			.banner > .items section {
+				padding: 1.5em 1em 1em 1em ;
 			}
 
 		}
 
 		@media screen and (max-width: 1280px) {
 
-			#banner > .items section {
-				padding: 3.5em 3em 1.5em 3em ;
+			.banner > .items section {
+				padding: 1.5em 1em 1em 1em ;
 			}
 
 		}
 
 		@media screen and (max-width: 980px) {
 
-			#banner {
+			.banner {
 				-moz-flex-direction: column-reverse;
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
 			}
 
-				#banner > .items {
+				.banner > .items {
 					-moz-flex-direction: row;
 					-webkit-flex-direction: row;
 					-ms-flex-direction: row;
@@ -5295,7 +5297,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				#banner > .slider {
+				.banner > .slider {
 					height: 40em;
 					max-height: 55vh;
 					width: 100%;
@@ -5305,15 +5307,15 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#banner > .items section {
-				padding: 3em 3em 1em 3em ;
+			.banner > .items section {
+				padding: 1.5em 1em 1em 1em ;
 			}
 
-				#banner > .items section h1 {
+				.banner > .items section h1 {
 					font-size: 1.25em;
 				}
 
-			#banner > .slider {
+			.banner > .slider {
 				height: 30em;
 				max-height: none;
 			}
@@ -5322,18 +5324,18 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#banner > .items {
+			.banner > .items {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 
-				#banner > .items section {
-					padding: 3em 3em 1em 3em ;
+				.banner > .items section {
+					padding: 1.5em 1em 1em 1em ;
 				}
 
-			#banner > .slider {
+			.banner > .slider {
 				height: 20em;
 				max-height: 40vh;
 			}
@@ -5425,7 +5427,7 @@ body.is-preload #content > .slider {
 
 	#footer {
 		background-color: #575b72;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(67, 75, 86, 0.75);
 		margin-top: 4em;
 		background-color: transparent;
 		text-align: center;
@@ -5436,15 +5438,15 @@ body.is-preload #content > .slider {
 		}
 
 		#footer a {
-			color: #ffffff;
+			color: #434b56;
 		}
 
 		#footer strong, #footer b {
-			color: #ffffff;
+			color: #434b56;
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #ffffff;
+			color: #434b56;
 		}
 
 		#footer blockquote {
@@ -5462,7 +5464,7 @@ body.is-preload #content > .slider {
 
 		#footer a {
 			border-bottom-color: transparent;
-			color: rgba(255, 255, 255, 0.75);
+			color: rgba(67, 75, 86, 0.75);
 		}
 
 			#footer a:hover {
@@ -5533,7 +5535,7 @@ body.is-preload #content > .slider {
 			}
 
 				#footer .contact-icons li:before {
-					color: #ffffff;
+					color: #434b56;
 				}
 
 				#footer .contact-icons li:first-child {
@@ -5541,7 +5543,8 @@ body.is-preload #content > .slider {
 				}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+      font-size: 1em;
+			color: rgba(67, 75, 86, 0.5);
 		}
 
 		@media screen and (max-width: 980px) {
