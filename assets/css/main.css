@@ -138,7 +138,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #4a74c9;
+    /* Background of body allows for faded filter effect of open menu */
+		background: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -4601,8 +4602,8 @@ input, select, textarea {
 	}
 
 	#menu {
-		background-color: #3a5896;
-		color: rgba(255, 255, 255, 0.75);
+		background-color: #ffffff;
+		color: rgba(0, 0, 0, 0.75);
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
@@ -4797,7 +4798,7 @@ input, select, textarea {
 	body.is-menu-visible #page-wrapper {
 		pointer-events: none;
 		cursor: default;
-		opacity: 0.25;
+		opacity: 0.5;
 	}
 
 	body.is-menu-visible #menu {
