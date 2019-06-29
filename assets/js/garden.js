@@ -11,3 +11,6 @@
    Reference script.js in testEnv/d3hw1/d3-src
 
 */
+
+var dates = ["06/24","07/03","07/11","07/22","07/30","08/02","08/09","08/20"];
+var dict = {};
