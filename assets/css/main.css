@@ -7,9 +7,22 @@
 	License: pixelarity.com/license
 */
 
-/* CAROUSAL IMAGE RESIZE CLASS */
+/* CAROUSEL IMAGE RESIZE CLASS */
 img.resize {
   max-width:70%;
+}
+
+/* Working on svg drawing space for garden map */
+
+svg {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  : 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
 }
 
 #navButton{
