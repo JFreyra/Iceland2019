@@ -2,8 +2,12 @@
   document.getElementById("demo").innerHTML = "blah";
 }*/
 
-
-function createDot(x,y,r){
+var circleRadii = [40, 20, 10];
+var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("height", 200);
+var circles = svgContainer.selectAll("circle").data(circleRadii).enter().append("circle");
+var circleAttributes = circles.attr("cx", 50).attr("cy", 50).attr("r", function (d) { return d; }).style("fill", "green");
+/*
+function createDots(x,y,r){
   document.createElementNS("http://www.w3.org/2000/svg","circle");
 
 }
@@ -28,3 +32,4 @@ $(document).ready(function () {
         $("#pixels").html("X="+pX+"; Y="+pY);
     });
 });
+*/

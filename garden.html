@@ -6,6 +6,9 @@
 -->
 <html>
 	<head>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<!--<script type="text/javascript" src="d3.v2.min.js"></script>-->
+		<script src="test.js"></script>
 		<title>Geothermal Heated Garden</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=devicesw4ikwidth, initial-scale=1, user-scalable=no" />
@@ -149,7 +152,7 @@
 
 								<!--	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/plant_map.PNG" alt="" width="128" height="128">
 
-									<script src="test.js"></script>
+
 
 									<div id="pixels"></div>
 
@@ -161,11 +164,23 @@
   									});
 									});
 								</script>-->
+
 								<svg height="100" width="100">
 								  <circle cx="50" cy="50" r="4" stroke="black" stroke-width="1" fill="red" />
 								Sorry, your browser does not support inline SVG.
 								</svg>
-							<a href="#" class="image main"><img src="images/plant_map.PNG" alt="" /></a>
+
+								<script>
+								var bodySelection = d3.select("body").append("svg").attr("width", 50).attr("height", 50).append("circle").attr("cx", 40).attr("cy", 40).attr("r", 25).style("fill", "purple");
+								</script>
+
+								<script>
+								var circleRadii = [40, 20, 10];
+								var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("height", 200);
+								var circles = svgContainer.selectAll("circle").data(circleRadii).enter().append("circle");
+								var circleAttributes = circles.attr("cx", 50).attr("cy", 50).attr("r", function (d) { return d; }).style("fill", "green");
+								</script>
+								<a href="#" class="image main"><img src="images/plant_map.PNG" alt="" /></a>
 
 								<!--<p>Mouse is at coordinates: <span></span></p>-->
 									<hr />
